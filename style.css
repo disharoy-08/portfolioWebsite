@@ -1,0 +1,221 @@
+
+/*    index.html styling    */
+
+ /*@import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&family=Open+Sans:ital,wght@1,800&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap'); 
+
+*{
+    margin: 8px;
+    padding: 0;
+}
+.sidebar{
+    position: absolute;
+    background-color: rgb(217, 223, 221);
+    /* width: 12vw; */
+    font-family: 'Open Sans', sans-serif;
+    height: 200vh;
+    transition: transform 0.4s ease-in;
+}
+.sidebar nav{
+    padding: 30px;
+    font-size: 20px;
+}
+.sidebar nav li {
+    list-style: none;
+    padding: 25px 0;
+}
+.sidebar nav li a{
+    text-decoration: none;
+    color: black;
+}
+.main{
+ /*   background-color: rgb(240, 207, 195);  */
+    background-color: white;
+    width: 90vw;
+    padding:23px;
+}
+.container{
+    display: flex;
+
+}
+.infocontainer{
+  /*  background-color:rgb(170, 219, 247); */
+    background-color: white;
+    height:58vh ;
+    width: 80vw;
+    padding:30px;
+    margin: 60px auto;
+    display: flex;  
+    justify-content: space-around; 
+}
+/* .infocontainer > .devpic{
+    text-align: right;
+}*/
+.devinfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Source Code Pro', monospace; 
+    margin-top: 70px;
+}
+.Hello{
+    font-size: 45px;
+}
+.name{
+    font-size: 35px;
+    font-weight:bold;
+   /* font-family: 'Open Sans', sans-serif; */
+}
+.about{
+    font-size: 25px;
+    margin-top: 15px;
+}
+.moreabout{
+    font-size: 17px;
+    margin-top: 15px;
+  /*  font-family: 'Open Sans', sans-serif; */
+}
+.btn{
+    margin-top: 20px;
+    margin-right: 20px;
+    padding: 12px;
+    border-radius: 20px;
+    color:white;
+    background-color:dodgerblue;
+    font-weight: bold;
+    font-size: 13px;
+    cursor:pointer;
+}
+.btn:hover{
+    background-color:white;
+    color:dodgerblue;
+}
+.devpic img{
+    height:58vh;
+}
+
+/*         Contact.html styling         */
+.contactform{
+    padding: 0 34px;
+    padding-top: 50px;
+    font-family: 'Open Sans', sans-serif;
+}
+.contactform h1{
+    font-family: 'Source Code Pro', monospace;
+   /* text-align: center; */
+    padding-bottom:30px ;
+
+}
+.contactform form div{
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+.contactform form div input{
+    width: 26vw;
+    border-radius: 5px;
+    margin: 6px 0 0 0;
+    padding: 3px;
+}
+.contactform form div #enquiry{
+    width: 30vw;
+    height: 70px;
+    /* margin: 0px; */
+
+}
+#emailHelp{
+    font-size: 13px;
+    color: midnightblue;
+    margin:0 5px;
+}
+#form-check{
+    flex-direction: row;
+}
+#form-check input{
+    width: 24px;
+    margin: 3px 0;
+}
+.btn-sm{
+    font-size: 14px;
+    background-color:green;
+    padding:9px;
+}
+/*     Blog.html styling    */
+.blogitem{
+    margin:20px;
+    font-family: 'Source Code Pro', monospace;
+    
+} 
+.blogcontainer h1{
+    font-family: 'Open Sans', sans-serif;
+    margin: 23px;
+}
+.blogitem p{
+    font-family: 'Source Code Pro', monospace;
+}
+/*     intro.html styling     */
+.intro h2{
+    font-family: 'Open Sans', sans-serif;
+    margin:12px;
+}
+.intro p{
+    font-family: 'Source Code Pro', monospace;
+    margin:12px;
+}
+.skillcontainer{
+    padding:12px;
+}
+.skillitem{
+    display:flex;
+    align-items: center;
+}
+.skill{
+    width: 265px;
+    height: 23px;
+    background-color: rgb(8, 119, 8);
+}
+.hundred{
+    width:250px;
+    background-color: green;
+}
+.fifty{
+    width:5em;
+    background-color: yellow;
+}
+.f25{
+    width:3px;
+    background-color: orange;
+}
+.ham{
+    margin: 3rem;;
+}
+.sidebargo{
+    transform: translate(-430px, 0px);
+    position: absolute;
+}
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+.cross{
+    margin-left: 190px;
+}
+@media screen and (max-width: 842px){
+    *{
+       /* background-color: blueviolet;*/
+    }  
+    .devpic{
+        display: none;
+    }
+    .intro, .blogcontainer, .contactform{
+        margin: 8px;
+    }
+   /* .sidebar{
+        transform: translate(-430px, 0px);
+        position: absolute;
+    } */
+}
